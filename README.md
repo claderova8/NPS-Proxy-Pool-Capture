@@ -12,7 +12,7 @@
 
 ## 特性
 
-- 🎯 自动抓取高可用 HTTP/HTTPS 代理  
+- 🎯 自动抓取高可用 socks5代理  
 - 🔓 弱口令检测 (HTTP Basic / Digest)  
 - 🧩 通过本地 SOCKS5 隧道抓取目标站点  
 - 🚀 支持多线程并发  
