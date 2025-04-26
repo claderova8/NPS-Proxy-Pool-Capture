@@ -19,13 +19,12 @@
 
 ## 目录
 
-- [安装](#安装)  
-- [依赖](#依赖)  
-- [使用示例](#使用示例)  
+- [安装](#安装)   
+- [使用示例](#使用示例)
+- [文件架构](#文件架构)  
 - [功能演示](#功能演示)  
   - [弱口令检测](#弱口令检测)  
-  - [SOCKS5 隧道抓取](#socks5-隧道抓取)  
-- [配置](#配置)  
+  - [SOCKS5 隧道抓取](#socks5-隧道抓取)   
 - [许可](#许可)  
 
 ## 安装
@@ -35,6 +34,7 @@ git clone https://github.com/claderova8/nps-proxy-pool.git
 cd nps-proxy-pool
 pip install requests tqdm
 ```
+## 使用示例
 ```bash
 基本用法示例：
 python main.py [目标指定参数] [弱口令检测参数] [数据获取/保存参数] [输出控制参数]
@@ -49,8 +49,8 @@ python main.py -H 192.168.1.100:8080 -C                  #服务端数据
 python main.py -H 192.168.1.100:8080 -T                  #隧道信息
 python main.py -l targets.txt -C -T -S                   #保存获取到的数据。客户端数据保存为 .json，隧道数据聚合保存到 tunnels.txt。
 ```
+## 文件结构
 ```bash
-文件结构
   main.py: 程序主入口，负责参数解析、模式判断和任务调度。
   nps_args.py: 负责命令行参数的定义和解析，以及目标和密码文件的加载。
   nps_auth.py: 处理 NPS 登录认证相关的网络请求和响应判断。
@@ -58,10 +58,10 @@ python main.py -l targets.txt -C -T -S                   #保存获取到的数�
   nps_core.py: 包含对单个目标进行弱口令尝试和数据获取的核心逻辑。
   nps_data.py: 负责在成功登录后获取客户端和隧道数据，以及处理特定格式的隧道数据格式化。
 ```
-
-## 弱口令检测
+## 功能演示
+### 弱口令检测
 ![image](https://github.com/user-attachments/assets/2f525fdc-9863-4b8b-9e96-9f819382e1fc)
 
-## socks5隧道抓取
+### socks5隧道抓取
 ![image](https://github.com/user-attachments/assets/af9f884f-6852-4747-9d5f-e023970e1c6f)
 
