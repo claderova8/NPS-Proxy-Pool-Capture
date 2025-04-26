@@ -29,7 +29,7 @@ pip install requests tqdm
 ```
 
 ## 弱口令检测
-![image](https://github.com/user-attachments/assets/49363610-13ea-407b-b799-9df51fb3657b)
+![image](https://github.com/user-attachments/assets/2f525fdc-9863-4b8b-9e96-9f819382e1fc)
 
 ## socks5隧道抓取
 ![image](https://github.com/user-attachments/assets/af9f884f-6852-4747-9d5f-e023970e1c6f)
