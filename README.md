@@ -16,7 +16,7 @@
 - 🔓 弱口令检测 (HTTP Basic / Digest)  
 - 🧩 通过本地 SOCKS5 隧道抓取目标站点  
 - 🚀 支持多线程并发  
-- 🐂 皮蛋哥NB
+- 🐂 皮蛋哥NB 🐂
 ## 目录
 
 - [安装](#安装)   
@@ -64,4 +64,7 @@ python main.py -l targets.txt -C -T -S                   #保存获取到的数�
 
 ### socks5隧道抓取
 ![image](https://github.com/user-attachments/assets/af9f884f-6852-4747-9d5f-e023970e1c6f)
+
+![image](https://github.com/user-attachments/assets/bf5de52a-302f-4c3f-a262-d08cbfacc11d)
+
 
