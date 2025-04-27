@@ -184,7 +184,7 @@ def format_tunnel_data(tunnel, host_ip, verbose=False, pbar=None):
             output_func(f"[*] 跳过隧道条目 ({reason}) : {tunnel.get('Id', '无ID')}, Mode={mode}, Port={port}", file=sys.stderr)
         return [] # 返回空列表表示无效
 
-    base_info = f"socks5 {host_ip}:{port_str}" # 构建基础部分 'socks5 ip:port'
+    base_info = f"socks5 {host_ip} {port_str}" # 构建基础部分 'socks5 ip:port'
 
     # --- 凭证提取逻辑 ---
     credential_pairs = [] # 存储解析出的 (user, password) 元组
